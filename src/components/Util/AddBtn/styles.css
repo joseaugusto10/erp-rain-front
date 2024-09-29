@@ -1,0 +1,16 @@
+/* src/components/Util/AddBtn.css */
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 0; /* Remove margem à esquerda */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;
+  }
+  

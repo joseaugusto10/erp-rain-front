@@ -1,0 +1,81 @@
+.create-update-modal .modal-header {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto em branco */
+    border-bottom: none; /* Remove a borda inferior */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .create-update-modal .modal-header .close {
+    color: white; /* Cor branca para o ícone de fechar */
+  }
+  
+  .create-update-modal .modal-dialog {
+    width: 100%;
+    max-width: 700px; /* Largura consistente */
+    min-height: 500px; /* Altura mínima para manter a consistência */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .create-update-modal .modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 500px; /* Altura mínima para o conteúdo */
+  }
+  
+  .create-update-modal .modal-body {
+    flex-grow: 1;
+    overflow-y: auto; /* Permite a rolagem se o conteúdo exceder a altura */
+    padding: 20px;
+  }
+  
+  .create-update-modal .modal-footer {
+    border-top: none;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .create-update-modal .save-btn,
+  .create-update-modal .cancel-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .create-update-modal .save-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .create-update-modal .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  .create-update-modal .cancel-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+  }
+  
+  .create-update-modal .cancel-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  @media (max-width: 768px) {
+    .create-update-modal .modal-dialog {
+      width: 90%;
+      min-height: 400px; /* Ajusta para telas menores */
+    }
+  
+    .create-update-modal .modal-content {
+      min-height: 400px; /* Ajuste para dispositivos móveis */
+    }
+  }
+  

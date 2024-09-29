@@ -1,0 +1,101 @@
+.main-container {
+  /* border: solid 1px red; */
+  padding: 20px;
+  top: 100px;
+}
+
+.search-table {
+  padding-top: 10px;
+  display: flex;
+  justify-content: end; /* Espaça os itens, colocando um no início e outro no final */
+  height: 60px;
+  width: 99%;
+}
+
+.search-container {
+  position: relative; /* Permite posicionar o ícone em relação ao input */
+}
+
+.search-container .fa-search {
+  position: absolute;
+  left: 10px; /* Distância do ícone à esquerda do input */
+  top: 50%; /* Alinha verticalmente o ícone */
+  transform: translateY(-50%); /* Ajusta a posição vertical do ícone */
+  pointer-events: none; /* Ignora eventos do mouse no ícone */
+}
+
+.search-container input {
+  padding-left: 30px; /* Adiciona espaço à esquerda para o ícone */
+  height: 100%; /* Preenche a altura do container */
+  box-sizing: border-box; /* Inclui o padding na largura total do input */
+  border: solid 1px #ccc; /* Borda padrão do input */
+  border-radius: 10px 10px 10px 0; /* Bordas arredondadas apenas nas laterais */
+}
+
+.table-responsive {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  /* border: solid 1px red; */
+  border-collapse: collapse;
+  margin: 20px;
+  background-color: white;
+}
+
+.table th, td {
+  /* border-bottom: solid 1px grey; */
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f9f9f9;
+}
+
+.table td {
+  background-color: #f9f9f9;
+}
+.client-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.view-icon {
+  cursor: pointer;
+  color: #007bff; /* Cor do ícone */
+  margin-left: 10px; /* Espaço à esquerda do ícone */
+}
+.view-icon:hover {
+  color: #0056b3; /* Cor do ícone ao passar o mouse */
+}
+
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pagination button.active {
+  background-color: blue;
+  color: white;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: darkgray;
+}
+

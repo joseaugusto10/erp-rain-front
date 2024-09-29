@@ -1,0 +1,21 @@
+.back-button {
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 55px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    display: flex; /* Usar flexbox para centralizar ícone e texto */
+    align-items: center; /* Alinhar verticalmente */
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  }
+  
+  .back-button .fa-arrow-left {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+  }
+  
+  

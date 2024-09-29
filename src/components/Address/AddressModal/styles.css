@@ -1,0 +1,90 @@
+.custom-modal .modal-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-bottom: none;
+}
+
+.custom-modal .modal-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom-modal .modal-body {
+  padding: 20px;
+}
+
+.custom-modal .search-add-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.custom-modal .search-input {
+  width: 90%; /* Aumenta a largura do campo de pesquisa */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-right: 10px; /* Aproxima o botão da pesquisa */
+}
+
+.custom-modal .add-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0; /* Remove margem à esquerda */
+}
+
+.custom-modal .add-btn:hover {
+  background-color: #218838;
+}
+
+.custom-modal .table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.custom-modal .edit-icon {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.custom-modal .delete-icon {
+  color: red; /* Define a cor da lixeira como vermelha */
+  cursor: pointer;
+  margin-left: 15px; /* Adiciona espaço entre o ícone de edição e a lixeira */
+}
+
+.custom-modal .pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-modal .pagination-btn {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-modal .pagination-btn.active {
+  background-color: #0056b3;
+}
+
+.custom-modal .pagination-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.custom-modal .modal-footer {
+  border-top: none;
+}

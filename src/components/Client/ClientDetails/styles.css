@@ -1,0 +1,204 @@
+.client-detail-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.client-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; /* Permite o posicionamento absoluto do ícone */
+}
+
+.client-avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid grey;
+}
+
+.avatar-edit-icon {
+    position: absolute;
+    top: 70%; /* Posiciona o ícone abaixo da imagem */
+    left: 85px; /* Ajuste horizontal para alinhar com a imagem */
+    cursor: pointer;
+    color: #007bff;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid #007bff;
+}
+
+.client-name {
+    font-size: 28px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.client-info, .client-address {
+    margin-top: 20px;
+}
+
+.client-info h2, .client-address h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.edit-input {
+    width: 100%; /* Ajustei o input para ocupar toda a largura disponível */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-row label {
+    font-weight: bold;
+    color: #333;
+    width: 20%; /* Define a largura dos labels */
+}
+
+.info-row input {
+    width: 75%; /* Define a largura dos inputs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.error-message {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+}
+
+/* Novo estilo para os botões */
+.update-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    background-color: #ec760f; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px; /* Espaço entre o botão de voltar e o de deletar */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button:active {
+    background-color: #003f7f;
+    transform: scale(0.98);
+}
+
+.update-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px; /* Adiciona espaço entre o botão de voltar e o de atualizar */
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}
+
+.update-btn:active {
+    background-color: #003f7f;
+    transform: scale(0.98);
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px; /* Espaço entre o botão de deletar e o botão de atualizar */
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Tom vermelho mais escuro */
+}
+
+.delete-btn:active {
+    background-color: #bd2131; /* Tom vermelho ainda mais escuro */
+    transform: scale(0.98);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .client-detail-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .client-avatar-large {
+        width: 100px;
+        height: 100px;
+    }
+
+    .client-name {
+        font-size: 24px;
+    }
+
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-row label, .info-row input {
+        width: 100%; /* Garante que o label e o input ocupem a largura total em dispositivos menores */
+    }
+
+    .update-btn {
+        width: 100%; /* Botão de atualização ocupa a largura total em dispositivos menores */
+    }
+}
